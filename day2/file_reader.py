@@ -20,14 +20,14 @@ def analisis_file(nama_file):
             
             # Menghitung total karakter termasuk spasi
             jumlah_karakter = len(konten)
-
+            preview = konten[:100]
             # Menampilkan hasil
             print("-" * 30)
             print(f"Statistik untuk File: {nama_file}")
             print("-" * 30)
             print(f"Jumlah Baris               : {jumlah_baris}")
             print(f"Jumlah Kata                : {jumlah_kata}")
-            print(f"Jumlah 100 Karakter Pertama: {konten[0:100]}")
+            print(f"Jumlah 100 Karakter Pertama: {preview}")
             print(f"Jumlah Karakter            : {jumlah_karakter}")
             print("-" * 30)
 

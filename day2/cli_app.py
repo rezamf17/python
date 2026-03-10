@@ -26,7 +26,7 @@ elif command == "stats":
     print("Jumlah Kata:", len(words.split()))
 elif command == "clean":
     words = text
-    clean = re.sub('[^A-Za-z0-9]+', '', words)
+    clean = re.sub('[^A-Za-z0-9 ]+', '', words)
     print("Clean Karakter:", clean)
 else:
     print("Command tidak dikenal")

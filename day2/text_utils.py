@@ -5,6 +5,7 @@ def to_lower(text):
 def reverse_text(text):
     return text[::-1]
 def count_words(text):
+    """Menghitung jumlah kata dalam teks."""
     return len(text.split())
 def count_characters(text):
     return len(text)
