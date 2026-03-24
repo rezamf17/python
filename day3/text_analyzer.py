@@ -28,24 +28,10 @@ def most_common_word(freq):
 
     return max_word, max_count
 
-def unique_words(freq):
-    max_word = {}
-    max_count = 0
-
-    for word, count in freq.items():
-        if count < 2:
-            max_word[word] = count
-            max_count += 1
-
-    return max_word, max_count
+def unique_words(text):
+    words = text.split()
+    return len(set(words))
 
 def top_3_words(freq):
-    max_word = {}
-    max_count = 0
-
-    for word, count in freq.items():
-        if count == 3:
-            max_word[word] = count
-            max_count += 1
-
-    return max_word, max_count
+    sorted_words = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+    return sorted_words[:3]
