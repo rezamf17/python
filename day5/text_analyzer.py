@@ -57,9 +57,3 @@ def ngram_frequency(ngrams):
     for gram in ngrams:
         freq[gram] = freq.get(gram, 0) + 1
     return freq
-
-def ngram_frequency(ngrams):
-    freq = {}
-    for gram in ngrams:
-        freq[gram] = freq.get(gram, 0) + 1
-    return freq
